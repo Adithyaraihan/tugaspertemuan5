@@ -1,0 +1,107 @@
+import java.util.Scanner;
+
+public class dheif {
+    public static void main(String[] args) {
+        // Scanner
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Nama=");
+        String nama = input.nextLine();
+
+        System.out.println("DAFTAR DEPARTEMEN KERJA");
+        System.out.println("1. PRODUKSI");
+        System.out.println("2. MARKETING");
+        System.out.println("3. INVENTORY");
+        System.out.print("PILIH DEPARTEMEN (PILIH ANGKA)=");
+        int dep = input.nextInt();
+
+        if (dep == 1) {
+            System.out.println("PENGALAMAN KERJA");
+            System.out.println("1. 1 TAHUN");
+            System.out.println("2. 1-2 TAHUN");
+            System.out.println("3. 2 TAHUN");
+            System.out.print("SILAHKAN PILIH (NOMOR)=");
+            int peng = input.nextInt();
+
+            double gaji1 = 3000000;
+            double gaji2 = 4000000;
+            double gaji3 = 5000000;
+
+            if (peng == 1) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= PRODUKSI");
+                System.out.println("GAJI= RP " + gaji1);
+            } else if (peng == 2) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= PRODUKSI");
+                System.out.println("GAJI= RP " + gaji2);
+            } else if (peng == 3) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= PRODUKSI");
+                System.out.println("GAJI= RP " + gaji3);
+            } else {
+                System.out.println("TIDAK VALID");
+            }
+
+
+        } else if (dep == 2) {
+            System.out.println("PENGALAMAN KERJA");
+            System.out.println("1. 1 TAHUN");
+            System.out.println("2. 1-2 TAHUN");
+            System.out.println("3. 2 TAHUN");
+            System.out.print("SILAHKAN PILIH (NOMOR)=");
+            int peng = input.nextInt();
+
+            double gaji1 = 3000000;
+            double gaji2 = 4000000;
+            double gaji3 = 5000000;
+
+            if (peng == 1) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= MARKETING");
+                System.out.println("GAJI= RP " + gaji1);
+            } else if (peng == 2) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= MARKETING");
+                System.out.println("GAJI= RP " + gaji2);
+            } else if (peng == 3) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= MARKETING");
+                System.out.println("GAJI= RP " + gaji3);
+            } else {
+                System.out.println("TIDAK VALID");
+            }
+          
+        } else if (dep == 3) {
+            System.out.println("PENGALAMAN KERJA");
+            System.out.println("1. 1 TAHUN");
+            System.out.println("2. 1-2 TAHUN");
+            System.out.println("3. 2 TAHUN");
+            System.out.print("SILAHKAN PILIH (NOMOR)=");
+            int peng = input.nextInt();
+
+            double gaji1 = 3000000;
+            double gaji2 = 4000000;
+            double gaji3 = 5000000;
+
+            if (peng == 1) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= INVENTORY");
+                System.out.println("GAJI= RP " + gaji1);
+            } else if (peng == 2) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= INVENTORY");
+                System.out.println("GAJI= RP " + gaji2);
+            } else if (peng == 3) {
+                System.out.println("NAMA=" + nama);
+                System.out.println("DEPARTEMEN KERJA= INVENTORY");
+                System.out.println("GAJI= RP " + gaji3);
+            } else {
+                System.out.println("TIDAK VALID");
+            }
+         
+        } else {
+            System.out.println("TIDAK VALID");
+        }
+    }
+}
